@@ -52,6 +52,7 @@ export const FACETS: (SearchFacetDivider | SearchFacetGroup | SearchFacetInputPr
   divider,
   inputs.title,
   inputs.altText,
+  inputs.wordpressId,
   inputs.description,
   divider,
   inputs.isOpaque,

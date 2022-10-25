@@ -70,6 +70,7 @@ const DialogAssetEdit = (props: Props) => {
 
   const generateDefaultValues = (asset?: Asset) => ({
     altText: asset?.altText || '',
+    wordpressId: asset?.wordpressId || '',
     description: asset?.description || '',
     originalFilename: asset ? getFilenameWithoutExtension(asset) : undefined,
     opt: {media: {tags: assetTagOptions}},
@@ -347,6 +348,15 @@ const DialogAssetEdit = (props: Props) => {
                   name="altText"
                   ref={register}
                   value={currentAsset?.altText}
+                />
+                {/* Wordpress ID */}
+                <FormFieldInputText
+                  disabled={formUpdating}
+                  error={errors?.wordpressId}
+                  label="Wordpress ID"
+                  name="wordpressId"
+                  ref={register}
+                  value={currentAsset?.wordpressId}
                 />
                 {/* Description */}
                 <FormFieldInputTextarea

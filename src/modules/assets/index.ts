@@ -204,6 +204,7 @@ const assetsSlice = createSlice({
               _createdAt,
               _updatedAt,
               altText,
+              wordpressId,
               description,
               extension,
               metadata {

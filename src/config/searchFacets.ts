@@ -19,6 +19,16 @@ export const inputs: Record<SearchFacetName, SearchFacetInputProps> = {
     type: 'string',
     value: ''
   },
+  wordpressId: {
+    assetTypes: ['file', 'image'],
+    field: 'wordpressId',
+    name: 'wordpressId',
+    operatorType: 'empty',
+    operatorTypes: ['empty', 'notEmpty', null, 'includes', 'doesNotInclude'],
+    title: 'Wordpress Id',
+    type: 'string',
+    value: ''
+  },
   description: {
     assetTypes: ['file', 'image'],
     field: 'description',

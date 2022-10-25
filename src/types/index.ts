@@ -3,6 +3,7 @@ import type {SanityAssetDocument, SanityDocument, SanityImageAssetDocument} from
 
 type CustomFields = {
   altText?: string
+  wordpressId?: string
   description?: string
   opt?: {
     media?: {
@@ -219,6 +220,7 @@ export type SearchFacetInputStringProps = SearchFacetInputCommon & {
 
 export type SearchFacetName =
   | 'altText'
+  | 'wordpressId'
   | 'description'
   | 'fileName'
   | 'height'
